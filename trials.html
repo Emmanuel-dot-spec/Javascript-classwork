@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="www.enyata.com" id="demo">Click here to visit to the enyata website</a>
+    <div>
+        <img id="newImage" src="" alt="">
+    </div>
+    <div id="another">
+
+    </div>
+
+
+
+    <script>
+        // Get attribute
+        var link = document.getElementById("demo");
+        let another = document.getElementById('another');
+
+        // console.log('link is', link);
+
+        // link.removeAttribute("href");
+        // console.log('link is', link);
+
+        // SET attribute
+        var newImage = document.getElementById('newImage');
+        newImage.setAttribute('src', 'assets/nature.jpg');
+        another.appendChild(newImage);
+    </script>
+</body>
+
+</html>

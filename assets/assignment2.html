@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Ques 1 -->
+    <h3>Ans to Q1 below</h3>
+    <p id="exam"></p>
+
+    <!-- Two -->
+    <h3>Ans to Q2 below</h3>
+    <p id="quick"></p>
+
+    <!-- Q5 reduce from left -->
+    <p>Subtract the numbers in the array, starting from the left:</p>
+
+    <p id="reduce"></p>
+
+    <!-- Lst que -->
+
+
+
+
+
+    <script>
+        //    Ques 1 (adding two numbers)
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById("exam").innerHTML = myFunction(4, 3);
+
+
+        // Ques two
+        function perimeterOfRectangle(w, l) {
+            let perimeter = (2 * (w * l));
+            return perimeter
+
+        }
+        console.log(perimeterOfRectangle(2, 2));
+
+        // 3
+
+        function areaOfTri(b, h) {
+            let area = (0.5 * (b * h));
+            return area
+
+        }
+        console.log(areaOfTri(8, 8));
+
+
+        // Reduce Number q4
+        var numbers = [175, 50, 25];
+        document.getElementById("reduce").innerHTML = numbers.reduce(myFunc);
+
+        function myFunc(total, num) {
+            return total - num;
+        }
+
+
+
+        // 5 (converting hours to mins and mins to hours)
+        function time_convert(num) {
+            var hours = Math.floor(num / 60);
+            var minutes = num % 60;
+            return hours + ":" + minutes;
+        }
+
+        console.log(time_convert(71));
+        console.log(time_convert(450));
+        console.log(time_convert(1441));
+
+
+
+
+        // Last ques
+
+
+        // Concat 
+        var array1 = ['car', 'bike', 'shoe'];
+        var array2 = ['chelsea', 'city', 'united'];
+
+        function add() {
+            const output = array1.concat(array2);
+            return output;
+        }
+        console.log(add());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // QUES 1 ALTERNATIVE
+        // console.log(factorial(5)); // 120
+
+        // function factorial(num) {
+        //     if (num == 1) return 1;
+
+        //     return num * factorial(num - 1); // pending multiplier
+        // }
+
+
+        // QUES ONE
+        function factorial(x) {
+
+            if (x === 0) {
+                return 1;
+            }
+            return x * factorial(x - 1);
+
+        }
+        console.log(factorial(5));
+
+        // QUE TWO
+        console.log(replicate(3, 5)) // [5, 5, 5]
+        console.log(replicate(1, 69)) // [69]
+        console.log(replicate(-2, 6)) // []
+
+        function replicate(times, number) {
+            if (times <= 0) {
+                return [];
+            } else {
+                return [number].concat(replicate(times - 1, number));
+            }
+
+        }
+
+        // QUE Three
+        var six = productOfArray([1, 2, 3]) // 6
+        var sixty = productOfArray([1, 2, 3, 10]) // 60
+
+        console.log(six, sixty);
+
+        function productOfArray(array) {
+            if (array.length === 0) {
+                return 1;
+            } else {
+                return array.shift() * productOfArray(array);
+            }
+        }
+    </script>
+</body>
+
+</html>
